@@ -18,14 +18,14 @@ WORKER = "food-explorer"
 
 
 def kv(fn, key):
-    for l in open(ST + fn, encoding="utf-8"):
+    for l in Path(ST + fn).read_text(encoding="utf-8").splitlines():
         if l.startswith(key + "="):
             return l.split("=", 1)[1].strip()
     raise SystemExit(f"{fn} 找不到 {key}")
 
 
 def acc_id():
-    for l in open(ST + "cf-account-ids.txt", encoding="utf-8"):
+    for l in Path(ST + "cf-account-ids.txt").read_text(encoding="utf-8").splitlines():
         if "hunglun2026" in l.lower() and not l.startswith("#"):
             return l.replace(":", "=").split("=")[-1].strip()
     raise SystemExit("找不到 hunglun2026 的 account id")

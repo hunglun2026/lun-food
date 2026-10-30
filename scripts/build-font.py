@@ -15,14 +15,13 @@
 來源字型沿用 tools/web-design 的快取（~/.cache/web-design/fonts/），不用重新下載 12MB。
 """
 import hashlib
-import io
 import re
 import shutil
 import sys
 from pathlib import Path
 
 sys.path.insert(0, r"D:\ClaudeOnly\tools\web-design")
-from webdesign import fonts  # noqa: E402
+from webdesign import fonts
 
 ROOT = Path(__file__).resolve().parent.parent
 FONTS = ROOT / "public" / "fonts"
@@ -121,7 +120,7 @@ def main() -> int:
         name = f"food-sans-{i}-{hashlib.sha1(blob).hexdigest()[:8]}.woff2"
         (FONTS / name).write_bytes(blob)
         total += len(blob)
-        faces.append('@font-face{font-family:"FoodSans";src:url("/fonts/%s") format("woff2");font-weight:400 800;font-display:swap;unicode-range:%s}' % (name, ranges(chars)))
+        faces.append(f'@font-face{{font-family:"FoodSans";src:url("/fonts/{name}") format("woff2");font-weight:400 800;font-display:swap;unicode-range:{ranges(chars)}}}')
         print(f"第 {i} 包：{len(chars)} 字，{len(blob) / 1024:.0f} KB → {name}")
     css = CSS.read_text(encoding="utf-8")
     a, b = css.index("/* FONTS:BEGIN"), css.index("/* FONTS:END */")

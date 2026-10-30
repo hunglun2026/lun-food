@@ -3,6 +3,7 @@
 import base64
 import json
 import urllib.request
+from pathlib import Path
 
 from nacl import encoding, public
 
@@ -10,14 +11,14 @@ ROOT = r"D:/ClaudeOnly/steve0802/"
 
 
 def kv(fn, key):
-    for l in open(ROOT + fn, encoding="utf-8"):
+    for l in Path(ROOT + fn).read_text(encoding="utf-8").splitlines():
         if l.startswith(key + "="):
             return l.split("=", 1)[1].strip()
     raise SystemExit(f"{fn} 找不到 {key}")
 
 
 def acc_id():
-    for l in open(ROOT + "cf-account-ids.txt", encoding="utf-8"):
+    for l in Path(ROOT + "cf-account-ids.txt").read_text(encoding="utf-8").splitlines():
         if "hunglun2026" in l.lower() and not l.startswith("#"):
             return l.replace(":", "=").split("=")[-1].strip()
     raise SystemExit("找不到 hunglun2026 的 account id")
