@@ -1,0 +1,25 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "food-explorer",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-01-01",
+  "observability": { "enabled": true },
+  // 網頁（public/）和 API 同一支 Worker：只有 /api/* 與 /admin/* 先進程式，其他直接回靜態檔
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*", "/admin/*"]
+  },
+  "d1_databases": [
+    { "binding": "DB", "database_name": "food-db", "database_id": "b279f15d-0372-46f8-b968-ca3002471de0" }
+  ],
+  // 自訂網域：部署時 Cloudflare 會自動建 DNS 與憑證（hunglun.com 在同一個帳號）
+  "routes": [{ "pattern": "food.hunglun.com", "custom_domain": true }],
+  // 每天台灣 03:00（UTC 19:00）查一次資料集有沒有更新
+  "triggers": { "crons": ["0 19 * * *"] },
+  "vars": {
+    "DATASET_ID": "7779",
+    "APP_VERSION": "0.1.0"
+  }
+  // secrets（wrangler secret put）：NTFY_TOPIC、ADMIN_TOKEN
+}

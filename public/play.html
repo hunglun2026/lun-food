@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>闖關遊戲｜臺灣美食探險家</title>
+<meta name="description" content="兩個闖關遊戲：分類小達人、猜縣市美食。題目都可以按喇叭聽。">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" as="font" type="font/woff2" href="/fonts/food-sans-0-e9f7c391.woff2" crossorigin>
+<link rel="stylesheet" href="/css/style.css?v=1">
+</head>
+<body data-page="play">
+<main>
+  <h1>🎮 闖關遊戲</h1>
+  <p class="lead">挑一個開始玩！題目旁邊的 🔈 按一下就會念給你聽。</p>
+  <div class="cards play">
+    <a class="tool" href="/classify"><div class="ico">🧩</div><h3>分類小達人</h3><p>看照片，這間店是小吃、中式還是西式？</p><span class="tag">認識料理類型</span></a>
+    <a class="tool" href="/guess"><div class="ico">🗺️</div><h3>猜縣市美食</h3><p>看照片和介紹，猜猜這間店在哪個縣市。</p><span class="tag">認識台灣各地</span></a>
+  </div>
+</main>
+<script src="/js/data.js?v=1"></script>
+<script src="/js/layout.js?v=1"></script>
+<script src="/js/fx.js?v=1"></script>
+<script src="/js/speak.js?v=1"></script>
+<script src="/js/zhuyin.js?v=1"></script>
+<script src="/js/progress.js?v=1"></script>
+<script src="/js/guide.js?v=1"></script>
+<script>Food.boot(function () {});</script>
+</body>
+</html>

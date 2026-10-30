@@ -1,0 +1,15 @@
+{
+  "name": "food-explorer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:local": "wrangler d1 migrations apply food-db --local",
+    "test": "node --experimental-strip-types scripts/test-parse.ts"
+  },
+  "devDependencies": {
+    "wrangler": "^4"
+  }
+}
