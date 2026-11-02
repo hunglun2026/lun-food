@@ -15,7 +15,7 @@
   const main = document.querySelector("main");
   main.before(wrap);
   wrap.innerHTML =
-    '<header class="top"><a class="logo" href="/">🍜 美食探險家</a><nav aria-label="主選單">' +
+    '<header class="top"><a class="logo" href="/home"><img src="/img/logo-192.webp" alt="" width="32" height="32">美食探險家</a><nav aria-label="主選單">' +
     NAV.map((n) => '<a href="' + n[2] + '"' + (n[0] === page ? ' aria-current="page"' : "") + ">" + n[1] + "</a>").join("") +
     '</nav><button class="gradebtn" id="gradebtn"></button></header>';
   wrap.appendChild(main);
@@ -52,7 +52,7 @@
   const sheet = document.createElement("dialog");
   sheet.className = "sheetmenu";
   sheet.innerHTML = '<div class="dlg-in"><div class="dlg-bar"><button class="btn" data-close>關閉 ✕</button></div>' +
-    [["🏠", "首頁", "/"]].concat(NAV.map((n) => [n[3], n[1], n[2]])).map((n) => '<a href="' + n[2] + '">' + (n[0] ? n[0] + " " : "") + n[1] + "</a>").join("") + "</div>";
+    [["🏠", "首頁", "/home"]].concat(NAV.map((n) => [n[3], n[1], n[2]])).map((n) => '<a href="' + n[2] + '">' + (n[0] ? n[0] + " " : "") + n[1] + "</a>").join("") + "</div>";
   document.body.appendChild(sheet);
   document.getElementById("more").onclick = () => sheet.showModal();
   sheet.querySelector("[data-close]").onclick = () => sheet.close();
