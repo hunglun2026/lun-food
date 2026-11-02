@@ -80,7 +80,7 @@
     // 卡片列表用 mini：沒有照片就只放類型色帶，不放整張示意圖（同類一整排會變成同一張圖，不專業）
     if (cls === "mini") { d.insertAdjacentHTML("afterbegin", '<span aria-hidden="true">' + s.group.emoji + "</span>"); return d; }
     const img = new Image();
-    img.src = "/img/group/" + s.group.id + ".webp?v=27";
+    img.src = "/img/group/" + s.group.id + ".webp?v=28";
     img.alt = "";
     img.loading = "lazy";
     img.onerror = () => { img.remove(); d.insertAdjacentHTML("afterbegin", '<span aria-hidden="true">' + s.group.emoji + "</span>"); };

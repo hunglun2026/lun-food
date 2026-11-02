@@ -19,7 +19,7 @@
   "triggers": { "crons": ["0 19 * * *"] },
   "vars": {
     "DATASET_ID": "7779",
-    "APP_VERSION": "0.1.4"
+    "APP_VERSION": "0.1.5"
   }
   // secrets（wrangler secret put）：NTFY_TOPIC、ADMIN_TOKEN
 }

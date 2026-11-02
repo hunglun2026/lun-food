@@ -76,6 +76,8 @@ Food.boot(function (shops) {
     const q = st.q.toLowerCase();
     list = shops.filter((s) => (!st.city || s.city === st.city) && (!st.g || s.grp === st.g) && (!st.pic || s.img) &&
       (!q || (s.name + s.city + s.town).toLowerCase().includes(q)));
+    // 有照片的排前面（sort 是穩定排序，同組內仍維持縣市、鄉鎮、店名順序）
+    list.sort((x, y) => (y.img ? 1 : 0) - (x.img ? 1 : 0));
     shown = 0;
     $list.replaceChildren();
     const few = st.city && cityCount[st.city] < Food.FEW ? "　※ " + st.city + "在觀光署的資料裡只有 " + cityCount[st.city] + " 間，不代表當地只有這些店。" : "";
