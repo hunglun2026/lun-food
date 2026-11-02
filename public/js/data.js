@@ -78,7 +78,7 @@
     d.setAttribute("role", "img");
     d.setAttribute("aria-label", s.name + "（示意圖）");
     const img = new Image();
-    img.src = "/img/group/" + s.group.id + ".webp?v=1";
+    img.src = "/img/group/" + s.group.id + ".webp?v=24";
     img.alt = "";
     img.loading = "lazy";
     img.onerror = () => { img.remove(); d.insertAdjacentHTML("afterbegin", '<span aria-hidden="true">' + s.group.emoji + "</span>"); };
