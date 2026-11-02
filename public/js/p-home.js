@@ -36,7 +36,7 @@ Food.boot(function (shops) {
     box.replaceChildren(...pick(withPic, 6).map((s) => {
       const a = el('<a class="acard" href="/shop#' + encodeURIComponent(s.id) + '"><div class="pic"></div><div class="info"><b>' + esc(s.name) + "</b><br><small>" +
         esc(s.group.emoji + " " + s.group.name) + "<br>" + esc(s.place) + "</small></div></a>");
-      a.querySelector(".pic").appendChild(Food.photo(s));
+      a.querySelector(".pic").appendChild(Food.photo(s, null, "mini"));
       return a;
     }));
   };

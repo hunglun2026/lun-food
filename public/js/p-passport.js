@@ -18,7 +18,7 @@ Food.boot(async function (shops) {
     const g = root.querySelector("#pp-seen");
     if (g) seen.slice(0, 60).forEach((s) => {
       const a = el('<a class="acard" href="/shop#' + encodeURIComponent(s.id) + '"><div class="pic"></div><div class="info"><b>' + esc(s.name) + "</b><br><small>" + esc(s.place) + "</small></div></a>");
-      a.querySelector(".pic").appendChild(Food.photo(s));
+      a.querySelector(".pic").appendChild(Food.photo(s, null, "mini"));
       g.appendChild(a);
     });
     root.querySelector("#pp-clear").onclick = async () => {
