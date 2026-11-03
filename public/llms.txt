@@ -1,0 +1,18 @@
+# 臺灣美食探險家
+
+> 從北到南找好味道，也能玩遊戲認識各地的美食。
+
+鴻綸科技（https://www.hunglun.com/）製作的免費學習網站，免註冊、免安裝，收錄於官網學習專區 https://www.hunglun.com/tools/games 。
+
+## 頁面
+- [資料說明](https://food.hunglun.com/about): 臺灣美食探險家的資料從哪裡來、有哪些限制、資料有誤怎麼回報。
+- [分類小達人](https://food.hunglun.com/classify): 看照片和店名，判斷這間店是小吃、中式、西式還是甜點。
+- [找美食](https://food.hunglun.com/explore): 依縣市、類型和關鍵字找觀光署資料裡的餐飲店家。
+- [猜縣市美食](https://food.hunglun.com/guess): 看照片和店家介紹，猜猜這間店在哪個縣市。
+- [臺灣美食探險家](https://food.hunglun.com/home): 交通部觀光署公開的餐飲店家資料，可以依縣市和類型找美食、逛地圖，也有給學校用的闖關遊戲。
+- [臺灣美食探險家](https://food.hunglun.com/): 從北到南找好味道，也能玩遊戲認識各地的美食。
+- [美食地圖](https://food.hunglun.com/map): 在地圖上看觀光署資料裡的餐飲店家，也能找離你最近的店。
+- [美食護照](https://food.hunglun.com/passport): 你看過的店、遊戲星星和徽章，只存在這台裝置。
+- [闖關遊戲](https://food.hunglun.com/play): 兩個闖關遊戲：分類小達人、猜縣市美食。題目都可以按喇叭聽。
+- [店家資料](https://food.hunglun.com/shop): 店家的地址、電話、營業時間與照片。
+- [教師專區](https://food.hunglun.com/teacher): 產生班級連結和 QR 碼，全班平板一掃就開始同一個遊戲。

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://food.hunglun.com/</loc></url>
-  <url><loc>https://food.hunglun.com/explore</loc></url>
-  <url><loc>https://food.hunglun.com/map</loc></url>
-  <url><loc>https://food.hunglun.com/play</loc></url>
-  <url><loc>https://food.hunglun.com/classify</loc></url>
-  <url><loc>https://food.hunglun.com/guess</loc></url>
-  <url><loc>https://food.hunglun.com/passport</loc></url>
-  <url><loc>https://food.hunglun.com/teacher</loc></url>
-  <url><loc>https://food.hunglun.com/about</loc></url>
-  <url><loc>https://food.hunglun.com/home</loc></url>
+  <url><loc>https://food.hunglun.com/about</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://food.hunglun.com/classify</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://food.hunglun.com/explore</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://food.hunglun.com/guess</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://food.hunglun.com/home</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://food.hunglun.com/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://food.hunglun.com/map</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://food.hunglun.com/passport</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://food.hunglun.com/play</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://food.hunglun.com/shop</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://food.hunglun.com/teacher</loc><lastmod>2026-11-03</lastmod></url>
 </urlset>
